@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Vocabulary.com Answer Bot
 // @namespace    https://github.com/kertrix/
-// @version      1.0.0
+// @version      1.0.1
 // @description  Helps you with your vocabulary.com lists using AI.
 // @author       Kertrix
 // @match        https://www.vocabulary.com/*
@@ -44,7 +44,7 @@ if(localStorage.getItem("words_defs")!==null){
     window.lists = []
 }
 
-if(!url.includes("/practice")){
+if(url.includes("/lists/") && !url.includes("/practice")){
     let words_defs = []
     setTimeout(function(){
         let entries = document.getElementsByClassName("entry");
