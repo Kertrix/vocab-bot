@@ -1,9 +1,7 @@
-"use strict";
-
 // ==UserScript==
 // @name         Vocabulary.com Answer Bot
 // @namespace    https://github.com/kertrix/
-// @version      2024-10-12
+// @version      1.0.0
 // @description  Helps you with your vocabulary.com lists using AI.
 // @author       Kertrix
 // @match        https://www.vocabulary.com/*
@@ -11,11 +9,13 @@
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        none
 // @require      https://cdn.jsdelivr.net/gh/stdlib-js/nlp-porter-stemmer@umd/browser.js
+// @updateURL    https://raw.githubusercontent.com/Kertrix/vocab-bot/refs/heads/main/vocab.user.js
+// @downloadURL  https://raw.githubusercontent.com/Kertrix/vocab-bot/refs/heads/main/vocab.user.js
 // ==/UserScript==
 
 let url = window.location.href
 let botActive = false; // Bot state
-const apiKey = 'CLE CHATGPT'; // Replace with your actual OpenAI API key
+const apiKey = 'CLE_CHATGPT'; // Replace with your actual OpenAI API key
 
 // Create a toggle button
 const button = document.createElement('i');
