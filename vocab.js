@@ -1,3 +1,5 @@
+"use strict";
+
 // ==UserScript==
 // @name         Vocabulary.com Answer Bot
 // @namespace    https://github.com/kertrix/
